@@ -56,8 +56,16 @@ function same(arr1,arr2){
    for(let num of arr1){
     arrObj1[num] = (arrObj1[num] || 0) + 1
    }
-    
-
+   for(let num of arr2){
+    arrObj2[num] = (arrObj2[num] || 0) + 1
+   }
+    for(let num of arrObj1)
+    {
+        if(!(arrObj1[num]**2 in arrObj2[num] ))
+        {
+            console.log(false);
+            return false
+        }
 }
 
 
