@@ -59,14 +59,34 @@
 // }
 // maxSubArraySum([2, 6, 9, 2, 1, 8, 5, 6, 3], 4);
 
-
 // write a function called minSubArrayLen which accepts two parameters- an array of positive integers and a positive integer.a
 
-// this function should return the minimal length of a contiguous subarray of which the sum is greater than or equal to the integer passed to the function. if there isnt one, return 0 instead 
+// this function should return the minimal length of a contiguous subarray of which the sum is greater than or equal to the integer passed to the function. if there isnt one, return 0 instead
 
-function minSubArrayLen(array,num) { 
-    let minArr = 0; 
-    
+function minSubArrayLen(array, num) {
+  let left = 0;
+  let right = left + 1;
+  let tempSum = 0;
+  let minLen = 0;
 
-    
+  for (let instance of array) {
+    if (instance >= num) {
+      return 1;
+    }
+  }
+
+  while(right < array.length){
+      if(array[left] + array[right] < num){
+          right++
+      }
+      else if(){
+          right++
+      }
+  }
+
+
+  
+
+
+
 }
