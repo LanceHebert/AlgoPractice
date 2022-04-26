@@ -206,3 +206,26 @@
 
 // isSubsequence('sing','sting');// true
 // isSubsequence('sing','sting') // true
+
+
+// var moveZeroes = function(nums) {
+//     let left = 0 
+//     let right = left + 1 
+    
+//    while (right < nums.length){      
+       
+//        if(nums[left] !== 0){
+//            left++                    
+//        }
+//        else if(nums[left] === 0 && nums[right] !== 0 )
+//            {
+//               nums[left] = nums[right]
+//                nums[right]= 0
+//                left++             
+//            }
+//            right++     
+//    }
+//     return nums
+//   };
+  
+//   console.log(moveZeroes([1,0,0,3,12,0,1,2,0]));
